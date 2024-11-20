@@ -1,0 +1,279 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #dcdcdc; /* Light gray */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Company Name */
+.company-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Main Page: White Company Name */
+body.main-page .company-name a {
+    text-decoration: none;
+    color: white; /* White text for the main page */
+    transition: color 0.3s ease;
+}
+
+body.main-page .company-name a:hover {
+    color: lightgray; /* Subtle hover effect for white text */
+}
+
+/* Client Page: Black Company Name */
+body.client-page .company-name a {
+    text-decoration: none;
+    color: black; /* Black text for the client page */
+    transition: color 0.3s ease;
+}
+
+body.client-page .company-name a:hover {
+    color: gray; /* Subtle hover effect for black text */
+}
+
+/* Slideshow Background */
+.slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Dark Overlay */
+.slideshow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1;
+}
+
+/* Company Name */
+.company-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 80px; /* Positioned below the company name */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    padding: 10px 30px;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sub-Header Text */
+.sub-header {
+    position: absolute;
+    top: 130px; /* Positioned below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', monospace;
+    font-size: 24px; /* Smaller font size */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Email Button */
+.email-button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 2;
+}
+
+.email-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Brighter background on hover */
+    color: black; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Client Portal Section */
+.client-portal {
+    text-align: center;
+    margin-top: 200px; /* Space below the navbar */
+}
+
+.client-portal h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 36px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* Portal Buttons */
+.portal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portal-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.portal-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Brighter background on hover */
+    color: black; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Company Name */
+.company-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+}
+
+.company-name a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set default color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.company-name a:hover {
+    color: gray; /* Subtle hover effect */
+}
+
+/* Services Section */
+.services {
+    margin-top: 150px; /* Space below navbar */
+    text-align: center;
+    padding: 20px;
+}
+
+.services h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* Individual Service */
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.service-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.service-description {
+    font-size: 16px;
+    color: black;
+    max-width: 500px;
+    text-align: left; /* Right-aligned text */
+}
+
