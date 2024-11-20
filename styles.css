@@ -303,14 +303,6 @@ body.client-page .company-name a:hover {
     text-align: center;
 }
 
-.service-description {
-    margin-bottom: 10px; /* Space between description and button */
-    font-size: 16px;
-    line-height: 1.6;
-    color: black;
-    text-align: center;
-}
-
 /* About Section */
 .about {
     margin-top: 150px; /* Space below navbar */
