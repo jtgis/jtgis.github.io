@@ -277,3 +277,31 @@ body.client-page .company-name a:hover {
     text-align: left; /* Right-aligned text */
 }
 
+/* About Section */
+.about {
+    margin-top: 150px; /* Space below navbar */
+    text-align: center; /* Center the section */
+    padding: 20px;
+}
+
+.about-image {
+    width: 60%; /* Adjust width to align with the navbar */
+    max-width: 800px; /* Optional maximum width */
+    margin: 20px auto;
+    display: block; /* Center the image */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-description {
+    width: 60%; /* Match the width of the image */
+    max-width: 800px; /* Same maximum width as the image */
+    margin: 20px auto; /* Center the paragraph container */
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    text-align: left; /* Left-align the text */
+}
+
+
