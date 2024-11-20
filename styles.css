@@ -355,6 +355,15 @@ body.client-page .company-name a:hover {
     }
 }
 .linkedin-profile {
-    margin-top: 20px;
     text-align: center;
+    margin-top: 20px;
+}
+
+.linkedin-profile a img {
+    width: 150px;
+    transition: transform 0.2s ease;
+}
+
+.linkedin-profile a img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
 }
