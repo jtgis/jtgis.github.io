@@ -354,3 +354,7 @@ body.client-page .company-name a:hover {
         font-size: 18px;
     }
 }
+.linkedin-profile {
+    margin-top: 20px;
+    text-align: center;
+}
