@@ -302,6 +302,23 @@ body.client-page .company-name a:hover {
     text-align: left; /* Left-align the text */
 }
 
+.about-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+    font-family: 'Courier New', monospace;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-button:hover {
+    background-color: #005582; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight enlargement */
+}
+
 /* Media Queries for Mobile and Tablet */
 @media (max-width: 1024px) {
     .navbar ul {
@@ -353,20 +370,4 @@ body.client-page .company-name a:hover {
     .email-button {
         font-size: 18px;
     }
-}
-.about-button {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #0077b5; /* LinkedIn blue */
-    color: white;
-    font-family: 'Courier New', monospace;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.about-button:hover {
-    background-color: #005582; /* Darker blue on hover */
-    transform: scale(1.1); /* Slight enlargement */
 }
