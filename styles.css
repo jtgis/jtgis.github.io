@@ -277,7 +277,7 @@ body.client-page .company-name a:hover {
 
 /* Service Buttons */
 .service-button {
-    display: inline-block;
+    display: block; /* Make the button appear on its own line */
     text-decoration: none;
     background-color: #0077b5; /* LinkedIn blue */
     color: white;
@@ -286,9 +286,10 @@ body.client-page .company-name a:hover {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px;
-    margin-top: 10px;
+    margin: 10px auto; /* Center the button */
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-align: center;
+    max-width: 300px; /* Optional: Prevent the button from becoming too wide */
 }
 
 .service-button:hover {
@@ -296,13 +297,18 @@ body.client-page .company-name a:hover {
     transform: scale(1.05); /* Slight enlargement on hover */
 }
 
-/* Center buttons below descriptions */
+/* Service Layout */
 .service {
+    margin-bottom: 30px; /* Add spacing between services */
     text-align: center;
 }
 
 .service-description {
-    margin-bottom: 10px; /* Add spacing between description and button */
+    margin-bottom: 10px; /* Space between description and button */
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    text-align: center;
 }
 
 /* About Section */
