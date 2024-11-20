@@ -289,7 +289,6 @@ body.client-page .company-name a:hover {
     margin: 10px auto; /* Center the button */
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-align: center;
-    max-width: 300px; /* Optional: Prevent the button from becoming too wide */
 }
 
 .service-button:hover {
