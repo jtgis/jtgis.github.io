@@ -8,7 +8,7 @@ function showNextSlide() {
 }
 
 // Automatically change slides every 5 seconds
-setInterval(showNextSlide, 8000);
+setInterval(showNextSlide, 5000);
 
 // Show the first slide initially
 slides[currentSlide].classList.add('active');
