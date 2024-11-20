@@ -275,6 +275,36 @@ body.client-page .company-name a:hover {
     text-align: left;
 }
 
+/* Service Buttons */
+.service-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.service-button:hover {
+    background-color: #005582; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Center buttons below descriptions */
+.service {
+    text-align: center;
+}
+
+.service-description {
+    margin-bottom: 10px; /* Add spacing between description and button */
+}
+
 /* About Section */
 .about {
     margin-top: 150px; /* Space below navbar */
