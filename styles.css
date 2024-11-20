@@ -333,7 +333,7 @@ body.client-page .company-name a:hover {
     }
 
     .service-description, .about-description {
-        text-align: ; /* Center align text on mobile */
+        text-align: left; /* Center align text on mobile */
         max-width: 90%; /* Adjust width */
     }
 }
