@@ -361,7 +361,7 @@ body.client-page .company-name a:hover {
     .email-button {
         bottom: 10px;
         right: 10px;
-        font-size: 20px;
+        font-size: 22px;
         padding: 8px 15px;
     }
 
@@ -391,6 +391,6 @@ body.client-page .company-name a:hover {
     }
 
     .email-button {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
