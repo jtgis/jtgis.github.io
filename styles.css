@@ -311,7 +311,7 @@ body.client-page .company-name a:hover {
     }
 
     .navbar ul li a {
-        font-size: 1rem; /* Slightly smaller links */
+        font-size: 20px; /* Slightly smaller links */
         padding: 8px 15px;
     }
 
@@ -353,6 +353,6 @@ body.client-page .company-name a:hover {
     }
 
     .email-button {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
