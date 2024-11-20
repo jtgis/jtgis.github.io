@@ -302,21 +302,42 @@ body.client-page .company-name a:hover {
     text-align: left; /* Left-align the text */
 }
 
+/* About Buttons */
 .about-button {
     display: inline-block;
     text-decoration: none;
     background-color: #0077b5; /* LinkedIn blue */
     color: white;
     font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px;
-    font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+}
+
+.github-profile .about-button {
+    background-color: #333; /* GitHub black */
 }
 
 .about-button:hover {
-    background-color: #005582; /* Darker blue on hover */
-    transform: scale(1.1); /* Slight enlargement */
+    background-color: #005582; /* Darker LinkedIn blue */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.github-profile .about-button:hover {
+    background-color: #555; /* Darker GitHub black */
+}
+
+/* Smaller Blurb */
+.about-subtext {
+    font-family: 'Courier New', monospace;
+    font-size: 14px; /* Slightly smaller than the main description */
+    color: #555; /* Darker gray for subtle emphasis */
+    line-height: 1.5;
+    text-align: center; /* Align it with the rest of the section */
+    margin-top: 20px;
 }
 
 /* Media Queries for Mobile and Tablet */
