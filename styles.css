@@ -354,7 +354,7 @@ body.client-page .company-name a:hover {
         font-size: 18px;
     }
 }
-.linkedin-button {
+.about-button {
     display: inline-block;
     text-decoration: none;
     background-color: #0077b5; /* LinkedIn blue */
@@ -366,7 +366,7 @@ body.client-page .company-name a:hover {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.linkedin-button:hover {
+.about-button:hover {
     background-color: #005582; /* Darker blue on hover */
     transform: scale(1.1); /* Slight enlargement */
 }
