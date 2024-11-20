@@ -304,4 +304,55 @@ body.client-page .company-name a:hover {
     text-align: left; /* Left-align the text */
 }
 
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 1024px) {
+    .navbar ul {
+        gap: 15px;
+    }
 
+    .navbar ul li a {
+        font-size: 1rem; /* Slightly smaller links */
+        padding: 8px 15px;
+    }
+
+    .sub-header {
+        font-size: 20px; /* Adjust font size */
+        padding: 0 10px; /* Add padding */
+    }
+
+    .email-button {
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .service, .about-content {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center;
+    }
+
+    .service-description, .about-description {
+        text-align: center; /* Center align text on mobile */
+        max-width: 90%; /* Adjust width */
+    }
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 36px; /* Smaller font size */
+    }
+
+    .navbar {
+        top: 50px; /* Adjust navbar position */
+        padding: 8px 15px;
+    }
+
+    .sub-header {
+        font-size: 18px; /* Smaller sub-header */
+    }
+
+    .email-button {
+        font-size: 12px;
+    }
+}
