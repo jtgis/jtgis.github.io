@@ -354,16 +354,19 @@ body.client-page .company-name a:hover {
         font-size: 18px;
     }
 }
-.linkedin-profile {
-    text-align: center;
-    margin-top: 20px;
+.linkedin-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+    font-family: 'Courier New', monospace;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.linkedin-profile a img {
-    width: 150px;
-    transition: transform 0.2s ease;
-}
-
-.linkedin-profile a img:hover {
-    transform: scale(1.1); /* Slight enlargement on hover */
+.linkedin-button:hover {
+    background-color: #005582; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight enlargement */
 }
