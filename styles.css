@@ -332,12 +332,14 @@ body.client-page .company-name a:hover {
 
 /* Smaller Blurb */
 .about-subtext {
+    width: 60%; /* Match the width of the image */
+    max-width: 800px; /* Same maximum width as the image */
+    margin: 20px auto; /* Center the paragraph container */
     font-family: 'Courier New', monospace;
-    font-size: 14px; /* Slightly smaller than the main description */
+    font-size: 12px; /* Slightly smaller than the main description */
     color: #555; /* Darker gray for subtle emphasis */
     line-height: 1.5;
-    text-align: center; /* Align it with the rest of the section */
-    margin-top: 20px;
+    text-align: left; /* Align it with the rest of the section */
 }
 
 /* Media Queries for Mobile and Tablet */
