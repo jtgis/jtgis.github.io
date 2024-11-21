@@ -275,6 +275,13 @@ body.client-page .company-name a:hover {
     text-align: left;
 }
 
+.service-description2 {
+    font-size: 16px;
+    color: black;
+    max-width: 700px;
+    text-align: left;
+}
+
 /* Service Buttons */
 .service-button {
     display: block; /* Make the button appear on its own line */
