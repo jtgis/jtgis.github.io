@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fredericton Map</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>OpenLayers Map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol/ol.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ol/ol.js"></script>
     <style>
         #map {
-            height: 600px; /* Adjust height as needed */
-            width: 100%; /* Adjust width as needed */
+            height: 600px;
+            width: 80%;
         }
     </style>
 </head>
 <body>
     <div id="map"></div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Initialize the map
-        var map = L.map('map').setView([45.9636, -66.6431], 16); // Fredericton coordinates
+        import 'ol/ol.css';
+        import Map from 'ol/Map';
+        import View from 'ol/View';
+        import TileLayer from 'ol/layer/Tile';
+        import OSM from 'ol/source/OSM';
 
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19
-        }).addTo(map);
+        const map = new Map({
+            target: 'map',
+            layers: [
+                new TileLayer({
+                    source: new OSM(),
+                }),
+            ],
+            view: new View({
+                center: ol.proj.fromLonLat([-66.6431, 45.9636]), // Fredericton coordinates
+                zoom: 13,
+            }),
+        });
     </script>
 </body>
 </html>
