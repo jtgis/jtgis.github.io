@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         #map {
-            height: 450px; /* Adjust height as needed */
-            width: 80%; /* Adjust width as needed */
+            height: 600px; /* Adjust height as needed */
+            width: 100%; /* Adjust width as needed */
         }
     </style>
 </head>
@@ -22,8 +22,12 @@
         // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
+        // Add a marker for Fredericton
+        var marker = L.marker([45.9636, -66.6431]).addTo(map);
+        marker.bindPopup('<b>Fredericton</b><br>New Brunswick, Canada').openPopup();
     </script>
 </body>
 </html>
