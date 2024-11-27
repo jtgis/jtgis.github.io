@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gomapping - clients</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="login.js"></script>
 </head>
 <body style="overflow-y: auto; overflow-x: hidden;">
     <!-- Company Name -->
@@ -23,9 +24,15 @@
 
     <!-- Main Content -->
     <div class="client-portal">
-        <div class="portal-buttons">
-            <a href="login.html" class="service-button">Client Portal</a>
-        </div>
+        <h1>Login</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <p id="errorMessage" style="color: red;"></p>
     </div>
 	
 	<!-- Email Button -->
